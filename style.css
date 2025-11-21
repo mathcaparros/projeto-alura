@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); /* Importa a fonte Quicksand do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Slackey&display=swap');
 
 * {
     box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total do elemento */
 }
 
 :root {
-    --primary-color: #00dcff; /* Cor primária (azul ciano vibrante) */
-    --secondary-color: #ffffff; /* Cor secundária (branco) */
-    --tertiary-color: #a9a9a9; /* Cor terciária (cinza para placeholders/bordas) */
-    --bg-color: #000c34; /* Cor de fundo (azul escuro) */
+    --primary-color: #75cece; /* Cor primária (azul ciano vibrante) */
+    --secondary-color: lab(7.31% -3.34 -7.61); /* Cor secundária (branco) */
+    --tertiary-color: #f0f2f3; /* Cor terciária (cinza para placeholders/bordas) */
+    --bg-color: #241191; /* Cor de fundo (azul escuro) */
 }
 
 body {
@@ -20,8 +20,8 @@ body {
     background-repeat: no-repeat; /* Impede que a imagem se repita */
     background-attachment: fixed; /* Mantém a imagem fixa durante a rolagem */
     background-color: var(--bg-color); /* Cor de fallback caso a imagem não carregue */
-    color: var(--secondary-color); /* Define a cor do texto padrão usando uma variável */
-    font-family: "Quicksand", sans-serif; /* Define a família da fonte */
+    color: var(--tertiary-color); /* Define a cor do texto padrão usando uma variável */
+    font-family: "Finger Paint", sans-serif;
 }
 
 header {
@@ -108,7 +108,7 @@ article {
     padding: 0; /* Remove o padding */
     padding: 0 1rem; /* Espaçamento interno nos lados */
     margin-bottom: 1.25rem; /* Margem inferior */
-    box-shadow: none; /* Sem sombra */
+    box-shadow:none; /* Sem sombra */
     transition: background-color 0.3s ease, border-bottom-color 0.3s ease; /* Transição suave */
     border-bottom: 1px solid var(--bg-color); /* Borda inferior */
     padding-bottom: 1.5rem; /* Espaçamento interno inferior */
@@ -122,7 +122,7 @@ article:hover {
 article h2 {
     margin-top: 0; /* Remove a margem superior */
     font-weight: 600; /* Peso da fonte */
-    font-size: 1.6rem; /* Tamanho da fonte */
+    font-size: 2.0rem; /* Tamanho da fonte */
     border-bottom: none; /* Sem borda inferior */
     padding-bottom: 0; /* Sem espaçamento interno inferior */
     margin-bottom: 0.25rem; /* Margem inferior */
@@ -130,10 +130,10 @@ article h2 {
 }
 
 article p {
-    margin: 0.5rem 0; /* Margem superior e inferior */
+    margin: 0.5rem 0.5; /* Margem superior e inferior */
     line-height: 1.6; /* Altura da linha para melhor legibilidade */
-    font-size: 1rem; /* Tamanho da fonte */
-    margin-bottom: 0.5rem; /* Margem inferior */
+    font-size: 1.1rem; /* Tamanho da fonte */
+    margin-bottom: 1rem; /* Margem inferior */
     color: var(--secondary-color); /* Cor do texto */
 }
 
